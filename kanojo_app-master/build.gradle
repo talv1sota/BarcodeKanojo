@@ -1,0 +1,29 @@
+buildscript {
+	ext.kotlin_version = '1.8.22'
+
+	repositories {
+		google()
+		mavenCentral()
+		maven { url 'https://jitpack.io' }
+		//noinspection JcenterRepositoryObsolete
+		jcenter()
+	}
+
+	dependencies {
+		classpath 'com.android.tools.build:gradle:8.2.2'
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+	}
+}
+
+allprojects {
+	repositories {
+		google()
+		mavenCentral()
+		maven { url 'https://jitpack.io' }
+		jcenter()
+	}
+}
+
+task clean(type: Delete) {
+	delete rootProject.buildDir
+}

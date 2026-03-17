@@ -1,0 +1,49 @@
+name: BarcodeKanojo
+options:
+  bundleIdPrefix: com.goujer.barcodekanojo
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MARKETING_VERSION: "0.5.2"
+    CURRENT_PROJECT_VERSION: 1
+
+targets:
+  BarcodeKanojo:
+    type: application
+    platform: iOS
+    sources:
+      - path: BarcodeKanojo
+        excludes:
+          - "Resources/avatar_data/**"
+          - "Resources/Backgrounds/**"
+    resources:
+      - path: BarcodeKanojo/Resources/Assets.xcassets
+      - path: BarcodeKanojo/Resources/avatar_data
+        buildPhase: resources
+      - path: BarcodeKanojo/Resources/Backgrounds
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.goujer.barcodekanojo.ios
+        INFOPLIST_FILE: BarcodeKanojo/App/Info.plist
+        SUPPORTED_INTERFACE_ORIENTATIONS: UIInterfaceOrientationPortrait
+        GENERATE_INFOPLIST_FILE: false
+        SWIFT_EMIT_LOC_STRINGS: "YES"
+
+  BarcodeKanojoTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: BarcodeKanojoTests
+    dependencies:
+      - target: BarcodeKanojo
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.goujer.barcodekanojo.ios.tests
+        GENERATE_INFOPLIST_FILE: true
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/BarcodeKanojo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BarcodeKanojo"
+        BUNDLE_LOADER: "$(TEST_HOST)"

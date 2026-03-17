@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditItemView">
+        <attr name="key" format="string"/>
+        <attr name="value" format="string"/>
+        <attr name="textColor" format="color"/>
+        <attr name="iconDrawable" format="integer"/>
+        <attr name="arrowDrawable" format="integer"/>
+        <attr name="addDrawable" format="integer"/>
+        <attr name="hoverText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="EditTextView">
+        <attr name="tkey" format="string" />
+        <attr name="tvalue" format="string" />
+        <attr name="ttextColor" format="color" />
+    </declare-styleable>
+
+	<declare-styleable name="CreditView">
+		<attr name="creditIcon" format="integer"/>
+		<attr name="creditName" format="string"/>
+		<attr name="creditPosition" format="string"/>
+		<attr name="creditDescription" format="string"/>
+	</declare-styleable>
+
+    <declare-styleable name="KanojoInfoGallery">
+        <attr name="android_galleryItemBackground" format="integer" />
+    </declare-styleable>
+</resources>

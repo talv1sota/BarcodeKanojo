@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0940C86643754E4F05004CE6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9509AADA0572E1D73EBBB1A3 /* LoginView.swift */; };
+		0A71DBAFA057857BE1694B32 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC60AAAF9338944BA3D443C3 /* SignupView.swift */; };
+		0CC4B1A05843DB3ED05FAC39 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B53774EA709DCDAEC4989C /* Alert.swift */; };
+		16DEA2A0E10A3C24EF8B6048 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715FA1A5451EFCE20EB0CD3E /* SettingsView.swift */; };
+		185498AAC32214D76178420E /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F8DC1D51F5513689EE7FF7 /* ActivityType.swift */; };
+		2959C498631ABDD4CB64B262 /* RelationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706ADD7F91C35FC13006AD52 /* RelationStatus.swift */; };
+		3924600E86763B80BA4A0C51 /* Kanojo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F126D763C1C1256BF062C7 /* Kanojo.swift */; };
+		39336A86E9C188F8E5113AEF /* ServerConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E49202DC43D97C8E5F21D /* ServerConfigView.swift */; };
+		46E517EA992A9781C4BC3089 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA6780DCDFF5A576552F5D /* DashboardViewModel.swift */; };
+		4741E7B9395C17EA3ABE9C00 /* KanojosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8375E118202F8585003E255 /* KanojosListView.swift */; };
+		4C7C360E58E8AA53E52F59A6 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362F01E1CA0B2F9CCFAEBD5B /* HTTPClient.swift */; };
+		503B97D44784C68E70A793D9 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D256F8D2DAED24B1B0E8F5 /* DashboardView.swift */; };
+		565777A078738E75904CAB2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E71C13C408B7006BEC169B /* ContentView.swift */; };
+		61E370048F290708F818C6EB /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB35BE27A50FEACFD3CD8B1 /* SearchResult.swift */; };
+		621B3ACF9FCA9ABC1CE7C2BC /* BarcodeKanojoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE3142FFAC56500A6421399 /* BarcodeKanojoApp.swift */; };
+		631DCBBEB3A01315D5A5ABF7 /* KanojoRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F09E4D7963066D4A2F0FAB0 /* KanojoRoomViewModel.swift */; };
+		6731A02C1557FA898836BEAD /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51455462CFACEA5B4FE36704 /* MainTabView.swift */; };
+		6769DB43AAD95A338FA41685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D6F07B296E18B7BE5CEAC32 /* Assets.xcassets */; };
+		6A10E72BFF7E5D1954A25CC4 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1FBF498B65471AE235597B /* LaunchView.swift */; };
+		6EFFB1F4E04B227826F76B26 /* BarcodeKanojoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FF0B14F5CAC8DF44BBE48F /* BarcodeKanojoAPI.swift */; };
+		7055DE124150286568D9B25D /* PasswordHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7CBC91FA46FD8AD4A8B46 /* PasswordHasher.swift */; };
+		71C0CB6E70F7D8B3157781A9 /* KanojosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88F588512B49A2C4BE9C7BB /* KanojosViewModel.swift */; };
+		727FD0B6724E1D075C51A3BA /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC5927110F1FFB350BFE83 /* APIResponse.swift */; };
+		7AF1D0CF066944214EF7FCAF /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7903DC4410B970DD97A97829 /* ScanViewModel.swift */; };
+		7B393C9CA53D79035F951B71 /* KanojoItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F9B794FAD6E051E16D733B /* KanojoItemCategory.swift */; };
+		84FE175423F7BDA2E4E1015F /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DD954C8A33E29059B1D731 /* BarcodeScannerView.swift */; };
+		8B17A802A47CC93654002A1E /* ScanHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3E0C0B57CC8229CB0B5B51 /* ScanHistory.swift */; };
+		8EF459AC2CC52471658D0117 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2C1B79817D106B36F1B27 /* User.swift */; };
+		90A95EF5CF04BD43250FAE64 /* KanojoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA05FE78E3CAADFFE40F25 /* KanojoItem.swift */; };
+		90CD0579346531BEC346EACB /* KanojoRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C636BEF960E5112C10477 /* KanojoRoomView.swift */; };
+		9A0FAB6B9F88A2ABCE5C88BD /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1540E8FBF99E8C810FF271 /* ImageDownloader.swift */; };
+		9A42EF9D9C146EDEBA71A2BD /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C222DE1000A60351B2E68AE5 /* Activity.swift */; };
+		A4E0A04418C2E2D02ED032CF /* ResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FBB78FB65DEA8EC1B3BD32 /* ResponseCode.swift */; };
+		AC5D727799AF8C06C60ED1B4 /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6893CD40C0AB5D8EACC3A166 /* ItemClass.swift */; };
+		AD759814CCB89B067DE758C7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B876B81C784C5DAAA9630B /* LoadingView.swift */; };
+		B85642A092497D6E26B8C454 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C321DA8D207F62B611266F2 /* AuthViewModel.swift */; };
+		BBD50D6C9A95CC7264FF9FB9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B6506ADABD445E48286B4 /* Product.swift */; };
+		C24258D63EB2C8610C1C85E5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BED9ECD2CB9DF1038848116 /* Category.swift */; };
+		C8BD60067378114E831C63FB /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3645A13104CBB8AA080E9 /* ErrorBanner.swift */; };
+		CBF8974231A5E054495C1CA4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF684EA10663359B5885065 /* Constants.swift */; };
+		CDF305E0B38A2D7EA7C4116E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585C7DD36A443C01BA39B0E2 /* ImageCache.swift */; };
+		D8AF2F3537705E2BCADAD7AE /* ActivityRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F371A2068C5CB6A27ADD6 /* ActivityRowView.swift */; };
+		E0C3A816C7473D6F994A3A97 /* LoveGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC18E56A3106B062436D2A9 /* LoveGaugeView.swift */; };
+		E745B1F7FA2E7D0C7926E2C6 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19F13F1E3031D5D78391DB /* AppSettings.swift */; };
+		EB3137883F1A824D3CAB53E4 /* DashboardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45088A4287E323E1F6121582 /* DashboardHeaderView.swift */; };
+		F9EB8F045EBDCF7ED7B2375A /* LoveIncrement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FCB857AE74E24E7B207DA /* LoveIncrement.swift */; };
+		FFA2B31CE343DF2DD44AD00B /* ModelDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EDDED3B0A0D9521656D34 /* ModelDecodingTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AC82EA59F1BA1BB20EE4CD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69043D9C5ABB3EDED8D60AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDA35ED8212AFEB0376043AD;
+			remoteInfo = BarcodeKanojo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B53774EA709DCDAEC4989C /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		0A3E49202DC43D97C8E5F21D /* ServerConfigView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServerConfigView.swift; sourceTree = "<group>"; };
+		0EB35BE27A50FEACFD3CD8B1 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		13E71C13C408B7006BEC169B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17C3645A13104CBB8AA080E9 /* ErrorBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
+		21D256F8D2DAED24B1B0E8F5 /* DashboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		32FBB78FB65DEA8EC1B3BD32 /* ResponseCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCode.swift; sourceTree = "<group>"; };
+		362F01E1CA0B2F9CCFAEBD5B /* HTTPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		42DD954C8A33E29059B1D731 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		45088A4287E323E1F6121582 /* DashboardHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardHeaderView.swift; sourceTree = "<group>"; };
+		4D1FBF498B65471AE235597B /* LaunchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		4FF684EA10663359B5885065 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		51455462CFACEA5B4FE36704 /* MainTabView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		54A7CBC91FA46FD8AD4A8B46 /* PasswordHasher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordHasher.swift; sourceTree = "<group>"; };
+		56F8DC1D51F5513689EE7FF7 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
+		585C7DD36A443C01BA39B0E2 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		5D6F07B296E18B7BE5CEAC32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DE3142FFAC56500A6421399 /* BarcodeKanojoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeKanojoApp.swift; sourceTree = "<group>"; };
+		5F09E4D7963066D4A2F0FAB0 /* KanojoRoomViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KanojoRoomViewModel.swift; sourceTree = "<group>"; };
+		63F126D763C1C1256BF062C7 /* Kanojo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanojo.swift; sourceTree = "<group>"; };
+		6893CD40C0AB5D8EACC3A166 /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
+		6A1540E8FBF99E8C810FF271 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		6C321DA8D207F62B611266F2 /* AuthViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		706ADD7F91C35FC13006AD52 /* RelationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationStatus.swift; sourceTree = "<group>"; };
+		715FA1A5451EFCE20EB0CD3E /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		74F9B794FAD6E051E16D733B /* KanojoItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanojoItemCategory.swift; sourceTree = "<group>"; };
+		7903DC4410B970DD97A97829 /* ScanViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
+		7C7F371A2068C5CB6A27ADD6 /* ActivityRowView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActivityRowView.swift; sourceTree = "<group>"; };
+		7FC18E56A3106B062436D2A9 /* LoveGaugeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoveGaugeView.swift; sourceTree = "<group>"; };
+		80CC5927110F1FFB350BFE83 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		840B6506ADABD445E48286B4 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		90E2FB8895FB36B8DBEADC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9509AADA0572E1D73EBBB1A3 /* LoginView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		960FCB857AE74E24E7B207DA /* LoveIncrement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveIncrement.swift; sourceTree = "<group>"; };
+		9BED9ECD2CB9DF1038848116 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9C19F13F1E3031D5D78391DB /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		9C3E0C0B57CC8229CB0B5B51 /* ScanHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHistory.swift; sourceTree = "<group>"; };
+		A5DB30FF8D81F3E0024C1559 /* BarcodeKanojoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BarcodeKanojoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88F588512B49A2C4BE9C7BB /* KanojosViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KanojosViewModel.swift; sourceTree = "<group>"; };
+		ADFA05FE78E3CAADFFE40F25 /* KanojoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanojoItem.swift; sourceTree = "<group>"; };
+		B8375E118202F8585003E255 /* KanojosListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KanojosListView.swift; sourceTree = "<group>"; };
+		B87C9EC61A0E07FAAC6C8CC2 /* BarcodeKanojo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BarcodeKanojo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C222DE1000A60351B2E68AE5 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		CE9EDDED3B0A0D9521656D34 /* ModelDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDecodingTests.swift; sourceTree = "<group>"; };
+		D62C636BEF960E5112C10477 /* KanojoRoomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KanojoRoomView.swift; sourceTree = "<group>"; };
+		F3E2C1B79817D106B36F1B27 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F5FA6780DCDFF5A576552F5D /* DashboardViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		F6B876B81C784C5DAAA9630B /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F8FF0B14F5CAC8DF44BBE48F /* BarcodeKanojoAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BarcodeKanojoAPI.swift; sourceTree = "<group>"; };
+		FC60AAAF9338944BA3D443C3 /* SignupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		015AFDA302B4F432EC143A89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D175168206CC56C9B959E6FA /* Auth */,
+				3CFCC934DBEA7A7AC0B163C2 /* Common */,
+				CE73D6085C1F24BD9AA5E752 /* Dashboard */,
+				7D0CAB314CCF9B000A055B3C /* Kanojos */,
+				FFE7B166E15E2A5441742FDB /* Scan */,
+				8C1B1952D1502BCA57404516 /* Settings */,
+				51455462CFACEA5B4FE36704 /* MainTabView.swift */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D85744B1C74C7FF8FB246C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B87C9EC61A0E07FAAC6C8CC2 /* BarcodeKanojo.app */,
+				A5DB30FF8D81F3E0024C1559 /* BarcodeKanojoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CFCC934DBEA7A7AC0B163C2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				17C3645A13104CBB8AA080E9 /* ErrorBanner.swift */,
+				F6B876B81C784C5DAAA9630B /* LoadingView.swift */,
+				7FC18E56A3106B062436D2A9 /* LoveGaugeView.swift */,
+			);
+			name = Common;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3D0DBC01A3A533787D205CD0 /* BarcodeKanojo */ = {
+			isa = PBXGroup;
+			children = (
+				9D79236B458ACA33F5051E9D /* App */,
+				679BA4A8D744241A2E6F07FE /* Configuration */,
+				C23966184C054321DFCB5875 /* Enums */,
+				8A966CEEA789FD94D7DDAD0B /* Models */,
+				B1F8183936A614536C77C565 /* Resources */,
+				BF0045A6F6885C812ACCDCAF /* Security */,
+				B3E9B99E20A6E073B5A558B7 /* Networking */,
+				7B7AC3123EE416C6ED1E92C8 /* ViewModels */,
+				015AFDA302B4F432EC143A89 /* Views */,
+			);
+			path = BarcodeKanojo;
+			sourceTree = "<group>";
+		};
+		48786D128143FD266E8E2CAC = {
+			isa = PBXGroup;
+			children = (
+				3D0DBC01A3A533787D205CD0 /* BarcodeKanojo */,
+				D5048036A0B6B333979867C4 /* BarcodeKanojoTests */,
+				2D85744B1C74C7FF8FB246C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		679BA4A8D744241A2E6F07FE /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9C19F13F1E3031D5D78391DB /* AppSettings.swift */,
+				4FF684EA10663359B5885065 /* Constants.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		7B7AC3123EE416C6ED1E92C8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6C321DA8D207F62B611266F2 /* AuthViewModel.swift */,
+				F5FA6780DCDFF5A576552F5D /* DashboardViewModel.swift */,
+				5F09E4D7963066D4A2F0FAB0 /* KanojoRoomViewModel.swift */,
+				A88F588512B49A2C4BE9C7BB /* KanojosViewModel.swift */,
+				7903DC4410B970DD97A97829 /* ScanViewModel.swift */,
+			);
+			name = ViewModels;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7D0CAB314CCF9B000A055B3C /* Kanojos */ = {
+			isa = PBXGroup;
+			children = (
+				D62C636BEF960E5112C10477 /* KanojoRoomView.swift */,
+				B8375E118202F8585003E255 /* KanojosListView.swift */,
+			);
+			name = Kanojos;
+			path = Kanojos;
+			sourceTree = "<group>";
+		};
+		8A966CEEA789FD94D7DDAD0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C222DE1000A60351B2E68AE5 /* Activity.swift */,
+				03B53774EA709DCDAEC4989C /* Alert.swift */,
+				80CC5927110F1FFB350BFE83 /* APIResponse.swift */,
+				9BED9ECD2CB9DF1038848116 /* Category.swift */,
+				63F126D763C1C1256BF062C7 /* Kanojo.swift */,
+				ADFA05FE78E3CAADFFE40F25 /* KanojoItem.swift */,
+				74F9B794FAD6E051E16D733B /* KanojoItemCategory.swift */,
+				960FCB857AE74E24E7B207DA /* LoveIncrement.swift */,
+				840B6506ADABD445E48286B4 /* Product.swift */,
+				9C3E0C0B57CC8229CB0B5B51 /* ScanHistory.swift */,
+				0EB35BE27A50FEACFD3CD8B1 /* SearchResult.swift */,
+				F3E2C1B79817D106B36F1B27 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8C1B1952D1502BCA57404516 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				715FA1A5451EFCE20EB0CD3E /* SettingsView.swift */,
+			);
+			name = Settings;
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9D79236B458ACA33F5051E9D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5DE3142FFAC56500A6421399 /* BarcodeKanojoApp.swift */,
+				13E71C13C408B7006BEC169B /* ContentView.swift */,
+				90E2FB8895FB36B8DBEADC14 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B1F8183936A614536C77C565 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D6F07B296E18B7BE5CEAC32 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B3E9B99E20A6E073B5A558B7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				362F01E1CA0B2F9CCFAEBD5B /* HTTPClient.swift */,
+				F8FF0B14F5CAC8DF44BBE48F /* BarcodeKanojoAPI.swift */,
+				585C7DD36A443C01BA39B0E2 /* ImageCache.swift */,
+				6A1540E8FBF99E8C810FF271 /* ImageDownloader.swift */,
+			);
+			name = Networking;
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BF0045A6F6885C812ACCDCAF /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				54A7CBC91FA46FD8AD4A8B46 /* PasswordHasher.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		C23966184C054321DFCB5875 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				56F8DC1D51F5513689EE7FF7 /* ActivityType.swift */,
+				6893CD40C0AB5D8EACC3A166 /* ItemClass.swift */,
+				706ADD7F91C35FC13006AD52 /* RelationStatus.swift */,
+				32FBB78FB65DEA8EC1B3BD32 /* ResponseCode.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		CE73D6085C1F24BD9AA5E752 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				7C7F371A2068C5CB6A27ADD6 /* ActivityRowView.swift */,
+				45088A4287E323E1F6121582 /* DashboardHeaderView.swift */,
+				21D256F8D2DAED24B1B0E8F5 /* DashboardView.swift */,
+			);
+			name = Dashboard;
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		D175168206CC56C9B959E6FA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4D1FBF498B65471AE235597B /* LaunchView.swift */,
+				9509AADA0572E1D73EBBB1A3 /* LoginView.swift */,
+				0A3E49202DC43D97C8E5F21D /* ServerConfigView.swift */,
+				FC60AAAF9338944BA3D443C3 /* SignupView.swift */,
+			);
+			name = Auth;
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D5048036A0B6B333979867C4 /* BarcodeKanojoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9EDDED3B0A0D9521656D34 /* ModelDecodingTests.swift */,
+			);
+			path = BarcodeKanojoTests;
+			sourceTree = "<group>";
+		};
+		FFE7B166E15E2A5441742FDB /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				42DD954C8A33E29059B1D731 /* BarcodeScannerView.swift */,
+			);
+			name = Scan;
+			path = Scan;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36A41D9F7126AEE3F2ABC2C4 /* BarcodeKanojoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06D147DE64C4C457D9CC8BE6 /* Build configuration list for PBXNativeTarget "BarcodeKanojoTests" */;
+			buildPhases = (
+				E5D2B6EDC7283E4EE927124C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9863609FFB37A62EEFA0B6EC /* PBXTargetDependency */,
+			);
+			name = BarcodeKanojoTests;
+			productName = BarcodeKanojoTests;
+			productReference = A5DB30FF8D81F3E0024C1559 /* BarcodeKanojoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDA35ED8212AFEB0376043AD /* BarcodeKanojo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80691FEF45C012600FF75D9E /* Build configuration list for PBXNativeTarget "BarcodeKanojo" */;
+			buildPhases = (
+				CFD553EC8C72AF2A4601E08E /* Sources */,
+				D3F09C72F012DC89A17A4FED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarcodeKanojo;
+			productName = BarcodeKanojo;
+			productReference = B87C9EC61A0E07FAAC6C8CC2 /* BarcodeKanojo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69043D9C5ABB3EDED8D60AAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 15AC604F0724866F1FE81B4C /* Build configuration list for PBXProject "BarcodeKanojo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 48786D128143FD266E8E2CAC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2D85744B1C74C7FF8FB246C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDA35ED8212AFEB0376043AD /* BarcodeKanojo */,
+				36A41D9F7126AEE3F2ABC2C4 /* BarcodeKanojoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3F09C72F012DC89A17A4FED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6769DB43AAD95A338FA41685 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFD553EC8C72AF2A4601E08E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727FD0B6724E1D075C51A3BA /* APIResponse.swift in Sources */,
+				9A42EF9D9C146EDEBA71A2BD /* Activity.swift in Sources */,
+				185498AAC32214D76178420E /* ActivityType.swift in Sources */,
+				0CC4B1A05843DB3ED05FAC39 /* Alert.swift in Sources */,
+				E745B1F7FA2E7D0C7926E2C6 /* AppSettings.swift in Sources */,
+				621B3ACF9FCA9ABC1CE7C2BC /* BarcodeKanojoApp.swift in Sources */,
+				C24258D63EB2C8610C1C85E5 /* Category.swift in Sources */,
+				CBF8974231A5E054495C1CA4 /* Constants.swift in Sources */,
+				565777A078738E75904CAB2E /* ContentView.swift in Sources */,
+				AC5D727799AF8C06C60ED1B4 /* ItemClass.swift in Sources */,
+				3924600E86763B80BA4A0C51 /* Kanojo.swift in Sources */,
+				90A95EF5CF04BD43250FAE64 /* KanojoItem.swift in Sources */,
+				7B393C9CA53D79035F951B71 /* KanojoItemCategory.swift in Sources */,
+				F9EB8F045EBDCF7ED7B2375A /* LoveIncrement.swift in Sources */,
+				7055DE124150286568D9B25D /* PasswordHasher.swift in Sources */,
+				BBD50D6C9A95CC7264FF9FB9 /* Product.swift in Sources */,
+				2959C498631ABDD4CB64B262 /* RelationStatus.swift in Sources */,
+				A4E0A04418C2E2D02ED032CF /* ResponseCode.swift in Sources */,
+				8B17A802A47CC93654002A1E /* ScanHistory.swift in Sources */,
+				61E370048F290708F818C6EB /* SearchResult.swift in Sources */,
+				8EF459AC2CC52471658D0117 /* User.swift in Sources */,
+				4C7C360E58E8AA53E52F59A6 /* HTTPClient.swift in Sources */,
+				6EFFB1F4E04B227826F76B26 /* BarcodeKanojoAPI.swift in Sources */,
+				CDF305E0B38A2D7EA7C4116E /* ImageCache.swift in Sources */,
+				9A0FAB6B9F88A2ABCE5C88BD /* ImageDownloader.swift in Sources */,
+				B85642A092497D6E26B8C454 /* AuthViewModel.swift in Sources */,
+				46E517EA992A9781C4BC3089 /* DashboardViewModel.swift in Sources */,
+				631DCBBEB3A01315D5A5ABF7 /* KanojoRoomViewModel.swift in Sources */,
+				71C0CB6E70F7D8B3157781A9 /* KanojosViewModel.swift in Sources */,
+				7AF1D0CF066944214EF7FCAF /* ScanViewModel.swift in Sources */,
+				6731A02C1557FA898836BEAD /* MainTabView.swift in Sources */,
+				6A10E72BFF7E5D1954A25CC4 /* LaunchView.swift in Sources */,
+				0940C86643754E4F05004CE6 /* LoginView.swift in Sources */,
+				39336A86E9C188F8E5113AEF /* ServerConfigView.swift in Sources */,
+				0A71DBAFA057857BE1694B32 /* SignupView.swift in Sources */,
+				C8BD60067378114E831C63FB /* ErrorBanner.swift in Sources */,
+				AD759814CCB89B067DE758C7 /* LoadingView.swift in Sources */,
+				E0C3A816C7473D6F994A3A97 /* LoveGaugeView.swift in Sources */,
+				D8AF2F3537705E2BCADAD7AE /* ActivityRowView.swift in Sources */,
+				EB3137883F1A824D3CAB53E4 /* DashboardHeaderView.swift in Sources */,
+				503B97D44784C68E70A793D9 /* DashboardView.swift in Sources */,
+				90CD0579346531BEC346EACB /* KanojoRoomView.swift in Sources */,
+				4741E7B9395C17EA3ABE9C00 /* KanojosListView.swift in Sources */,
+				84FE175423F7BDA2E4E1015F /* BarcodeScannerView.swift in Sources */,
+				16DEA2A0E10A3C24EF8B6048 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D2B6EDC7283E4EE927124C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA2B31CE343DF2DD44AD00B /* ModelDecodingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9863609FFB37A62EEFA0B6EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDA35ED8212AFEB0376043AD /* BarcodeKanojo */;
+			targetProxy = 8AC82EA59F1BA1BB20EE4CD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2E751A999F33E30C1E8ABE3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BarcodeKanojo/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goujer.barcodekanojo.ios;
+				SDKROOT = iphoneos;
+				SUPPORTED_INTERFACE_ORIENTATIONS = UIInterfaceOrientationPortrait;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65A6CD4D89817D6105D973CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BarcodeKanojo/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goujer.barcodekanojo.ios;
+				SDKROOT = iphoneos;
+				SUPPORTED_INTERFACE_ORIENTATIONS = UIInterfaceOrientationPortrait;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B55B3175FEC9C2A271CABF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.5.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		CE444BD76FC53F9BF0C41EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goujer.barcodekanojo.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarcodeKanojo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BarcodeKanojo";
+			};
+			name = Debug;
+		};
+		D77F57316037B73706C5C3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.5.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		F40C0AF4513BFBEEE239E94E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goujer.barcodekanojo.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarcodeKanojo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BarcodeKanojo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06D147DE64C4C457D9CC8BE6 /* Build configuration list for PBXNativeTarget "BarcodeKanojoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE444BD76FC53F9BF0C41EE1 /* Debug */,
+				F40C0AF4513BFBEEE239E94E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		15AC604F0724866F1FE81B4C /* Build configuration list for PBXProject "BarcodeKanojo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D77F57316037B73706C5C3F6 /* Debug */,
+				7B55B3175FEC9C2A271CABF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		80691FEF45C012600FF75D9E /* Build configuration list for PBXNativeTarget "BarcodeKanojo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A6CD4D89817D6105D973CC /* Debug */,
+				2E751A999F33E30C1E8ABE3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69043D9C5ABB3EDED8D60AAD /* Project object */;
+}

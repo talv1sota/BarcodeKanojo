@@ -1,0 +1,2 @@
+rootProject.name = "barcodekanojo"
+include ':app'

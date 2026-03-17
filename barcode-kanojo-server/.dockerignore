@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+barcode_kanojo.db
+.git/
+.gitignore
+*.md
+tests/
+.pytest_cache/
